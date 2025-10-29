@@ -1,3 +1,6 @@
+python version
+Python 3.10.11
+https://www.python.org/downloads/release/python-31011/
 
 # จากนั้นติดตั้ง library
 
