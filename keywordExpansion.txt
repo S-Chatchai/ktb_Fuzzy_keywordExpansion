@@ -9,7 +9,9 @@ venv\Scripts\activate
 
 # จากนั้นติดตั้ง library
 pip install pandas rapidfuzz pythainlp openpyxl
-pip install pandas openpyxl pythainlp sentence-transformers torch tqdm google-generativeai regex
+
+pip install sentence-transformers==5.1.1 torch==2.8.0 pydantic==2.12.0 pydantic-core==2.41.1 pillow==11.3.0 huggingface-hub==0.35.3 google-api-core==2.25.2 pandas openpyxl tqdm pythainlp google-generativeai
+
 
 
 
