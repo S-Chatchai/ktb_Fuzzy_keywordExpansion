@@ -1,5 +1,0 @@
-python -m venv venv
-# Windows
-venv\Scripts\activate
-
-pip install pandas rapidfuzz pythainlp openpyxl
