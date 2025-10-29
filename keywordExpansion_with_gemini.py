@@ -28,7 +28,7 @@ existing_keywords = [
 # -------------------------------
 # Model
 # -------------------------------
-model_st = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2')
+model_st = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2', use_auth_token=False)
 threshold = 0.79
 
 # -------------------------------
