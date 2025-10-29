@@ -1,7 +1,5 @@
-# สร้าง venv
-python -m venv venv
-# Windows
-venv\Scripts\activate
 
 # จากนั้นติดตั้ง library
-pip install pandas pythainlp sentence-transformers torch tqdm google-generativeai openpyxl
+pip install pandas pythainlp sentence-transformers tqdm google-generativeai openpyxl torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+
+
