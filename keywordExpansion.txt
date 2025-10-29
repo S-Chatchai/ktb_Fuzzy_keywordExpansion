@@ -1,5 +1,13 @@
 
 # จากนั้นติดตั้ง library
-pip install pandas pythainlp sentence-transformers tqdm google-generativeai openpyxl torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+
+# CPU-only PyTorch
+pip install torch --index-url https://download.pytorch.org/whl/cpu
+
+# Sentence Transformers
+pip install sentence-transformers==2.2.2
+
+# Other required packages
+pip install pandas tqdm pythainlp openai google-generativeai openpyxl
 
 
