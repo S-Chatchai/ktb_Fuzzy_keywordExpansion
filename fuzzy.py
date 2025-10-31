@@ -94,7 +94,7 @@ def remove_blacklist_exact(text, blacklist):
 # ตั้งค่าชื่อไฟล์, keywords และ blacklist
 # -------------------
 input_file = "CMPC_Monthly_20250531.xlsx"
-output_file = "../outputfile/CMPC_Monthly_relevant1.xlsx"
+output_file = "CMPC_Monthly_relevant1.xlsx"
 
 keyword_sets = [
     ["คุณสู้เราช่วย"],
