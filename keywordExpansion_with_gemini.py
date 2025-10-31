@@ -14,7 +14,7 @@ genai.configure(api_key="AIzaSyDIyLTH6O8ccHCW26AhFFxVC_eD5apumkc")  # อย่�
 # -------------------------------
 # Load Excel
 # -------------------------------
-input_file = "../inputfile/thai_complaints_10000rows_batched.xlsx"
+input_file = "thai_complaints_10000rows_batched.xlsx"
 df = pd.read_excel(input_file)
 texts = df['รายละเอียด'].tolist()[:100]
 
@@ -109,7 +109,7 @@ for start_text in tqdm(range(0, len(texts), batch_size_text), desc="Processing s
 # Save results to Excel first
 # -------------------------------
 df_expanded = pd.DataFrame(expanded_results)
-excel_output_file = "../outputfile/expanded_keywords_for_review_test_no_clean100.xlsx"
+excel_output_file = "expanded_keywords_for_review_test_no_clean100.xlsx"
 df_expanded.to_excel(excel_output_file, index=False)
 print(f"Saved initial results to {excel_output_file} for your review!")
 
@@ -164,7 +164,7 @@ for existing_kw, new_words_set in expanded_keywords_by_kw.items():
         results_to_save[existing_kw] = []
 
 # Save the final results to a JSON file
-json_output_file = "../outputfile/expanded_keywords_gemini_no_clean100.json"
+json_output_file = "expanded_keywords_gemini_no_clean100.json"
 with open(json_output_file, 'w', encoding='utf-8') as f:
     json.dump(results_to_save, f, ensure_ascii=False, indent=4)
 
